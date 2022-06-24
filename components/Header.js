@@ -39,7 +39,7 @@ export default function Header() {
                 <div className="flex-shrink-0">
                   <Link href="/">
                     <img
-                      className="h-12 w-auto"
+                      className="h-14 w-auto"
                       src="/paedyputih.png"
                       alt="Workflow"
                     />
