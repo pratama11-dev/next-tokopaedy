@@ -8,6 +8,10 @@ export default function Layout({title, children}) {
         <title>{title ? title + '- Tokopaedy V3':'Tokopaedy V3'}</title>
         <meta name="description" content="Ecommerce Website" />
         <link rel="icon" href="/favicon.ico" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet" />
       </Head>
 
       <div className="min-h-full">
