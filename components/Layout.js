@@ -5,7 +5,7 @@ export default function Layout({title, children}) {
   return (
     <>
       <Head>
-        <title>{title ? title + '- Tokopaedy V3':'Tokopaedy V3'}</title>
+        <title>{title ? title + ' - Tokopaedy V3':'Tokopaedy V3'}</title>
         <meta name="description" content="Ecommerce Website" />
         <link rel="icon" href="/favicon.ico" />
 
@@ -17,7 +17,7 @@ export default function Layout({title, children}) {
       <div className="min-h-full">
         <Header />
         <main>
-          <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto py-6 pt-0 sm:px-6 lg:px-8">
             {children}
           </div>
         </main>
