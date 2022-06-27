@@ -6,7 +6,7 @@ export default function ProductScreen() {
   const { slug } = query;
 
   return (
-    <Layout title={product.name}>
+    <Layout>
 
     </Layout>
   )

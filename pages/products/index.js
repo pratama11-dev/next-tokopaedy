@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../../components/Layout'
 import Link from 'next/link'
+// import Image from 'next/image'
 
 const products = [
   {
@@ -72,21 +73,22 @@ const products = [
 export default function Products() {
   return (
     <Layout title="Products">
-      <div className="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8">
+      <div className="px-4 pt-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <h4 className="text-3xl font-bold text-gray-900">Product Page</h4>
       </div>
 
       <div className="bg-white">
-        <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div className="max-w-2xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             {products.map((product) => (
               <Link href={`/products/${product.slug}`} key={product.id}>
                 <a className="group">
-                  <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                  <div className="w-full overflow-hidden bg-gray-200 rounded-lg aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8">
+                    {/* <Image src={product.imageSrc} alt={product.imageAlt} width="100%" height="100%" layout="responsive" objectFit="contain"/> */}
                     <img
                       src={product.imageSrc}
                       alt={product.imageAlt}
-                      className="w-full h-full object-center object-cover group-hover:opacity-75"
+                      className="object-cover object-center w-full h-full group-hover:opacity-75"
                     />
                   </div>
                   <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
